@@ -18,12 +18,7 @@ module.exports = {
       chainId: 1337,
    
     },
-    ropsten: {
-      // Infura
-      // url: `https://polygon-mumbai.infura.io/v3/${infuraId}`
-      url: `https://ropsten.infura.io/v3/${infuraId}`,
-      accounts: [privateKey],  
-    },
+  
     mumbai: {
       // Alchemy
       url: `https://polygon-mumbai.g.alchemy.com/v2/${alchemyId}`,
@@ -40,7 +35,14 @@ module.exports = {
       // url: `https://polygon-mainnet.infura.io/v3/${infuraId}`,
       url: `https://polygon-mainnet.infura.io/v3/${infuraId}`,
       accounts: [privateKey]
-    }
+    },
+
+    ropsten: {
+      // Infura
+      // url: `https://polygon-mumbai.infura.io/v3/${infuraId}`
+      url: `https://ropsten.infura.io/v3/${infuraId}`,
+      accounts: [privateKey],  
+    },
     
   },
   solidity: {
