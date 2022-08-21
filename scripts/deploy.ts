@@ -4,10 +4,10 @@ const hre = require("hardhat");
 
 async function main() {
  
-  const ERC721 = await hre.ethers.getContractFactory("ERC721");
-  const poly = await ERC721.deploy(ERC721.address);
+  const MyToken  = await hre.ethers.getContractFactory("MyToken");
+  const poly = await MyToken.deploy(MyToken .address);
   await poly.deployed();
-  console.log("ERC721 deployed to:", poly.address);
+  console.log("MyToken  deployed to:", poly.address);
 
   let config = `
  

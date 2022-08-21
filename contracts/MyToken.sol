@@ -6,8 +6,20 @@ import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 import "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 
+import "hardhat/console.sol";
+
+
 contract MyToken is ERC721, ERC721URIStorage, Ownable {
-    constructor() ERC721("Web3", "We3") {}
+     
+
+   // constructor() ERC721("Web3", "W3") {}
+     address contractAddress;
+
+    
+    constructor(address polyAddress) ERC721("Web3", "W3") {
+        contractAddress = polyAddress;
+    }
+
 
     function safeMint(address to, uint256 tokenId, string memory uri)
         public
