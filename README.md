@@ -9,5 +9,9 @@ npx hardhat help
 npx hardhat test
 GAS_REPORT=true npx hardhat test
 npx hardhat node
+npx hardhat compile 
 npx hardhat run scripts/deploy.ts
+npx hardhat verify --network mumbai 0xa7D09AEBa4E4fEAd991F055Fd987E932858e40e6
+
+
 ```
